@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  JR-Player
+//
+//  Created by lx_long on 16/3/9.
+//  Copyright © 2016年 lx_long. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <AVFoundation/AVFoundation.h>
+#import <UIKit/UIKit.h>
+
+#define SCREEN_W ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_H ([UIScreen mainScreen].bounds.size.height)
+#define CELL_H (SCREEN_W / 16 * 9 + 10)
+#define MAGIN_W ([UIScreen mainScreen].bounds.size.width / 3)
+
+#endif /* PrefixHeader_pch */
